@@ -419,6 +419,26 @@ a.totop {
 }
 
 /* Specific styles */
+
+.flag-bg {
+  background-image: url(../images/australia-640.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.aussie {
+  position: relative;
+}
+.aussie:after{
+  content:'';
+  position: absolute;
+  width:30px;
+  height:28px;
+  top:0;
+  right:-30px;
+  background:transparent url(../images/australia-30.png)
+}
+
 .categories {
 
 }
