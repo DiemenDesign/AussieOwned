@@ -411,6 +411,13 @@ blockquote footer {
   text-align: center;
 }
 
+a.totop {
+  display:block;
+  width:100%;
+  font-size:.75em;
+  text-align:right;
+}
+
 /* Specific styles */
 .categories {
 
