@@ -135,28 +135,34 @@ nav ul {
 }
 
 nav ul li {
-  position: relative;
+    position: relative;
     display: inline-block;
     margin: 0 0.5rem;
 }
 
 /* Dropdown */
-  nav ul li:hover ul li {
+nav ul li:hover ul {
     display: block;
-  }
+}
 
-  nav ul li ul li {
+nav ul li ul {
+    display: none;
     position: absolute;
     top: 1.2em;
-    left: -.75em;
-    display: none;
+    left: 0;
+    width: auto;
     height: auto;
     background: #fff;
     border: 1px solid var(--color-bg-secondary);
-    padding: .5em 2em;
+    padding: .5em 1em;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
-  }
+}
+
+nav ul li ul li {
+    text-align: left;
+    white-space: nowrap;
+}
 
 /* Typography */
 code,
