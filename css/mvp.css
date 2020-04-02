@@ -83,6 +83,23 @@ section aside {
     padding: 1.25rem;
     width: var(--width-card);
 }
+@media(min-width:768px){
+  section aside {
+      border: 1px solid var(--color-bg-secondary);
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow) var(--color-shadow);
+      margin: 1rem;
+      padding: 1.25rem;
+      width: 100%;
+      font-size: 1.25em;
+  }
+}
+@media(min-width:1200px){
+  section aside {
+      width: var(--width-card);
+      font-size: 1em;
+  }
+}
 
 section aside:hover {
     box-shadow: var(--box-shadow) var(--color-bg-secondary);
@@ -125,7 +142,7 @@ nav {
     align-items: center;
     display: flex;
     font-weight: bold;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 0;
 }
 
@@ -140,6 +157,16 @@ nav ul li {
     margin: 0 0.5rem;
 }
 
+@media(min-width:768px){
+  nav ul li {
+    font-size: 2em!important;
+  }
+}
+@media(min-width:1200px){
+  nav ul li {
+    font-size: 1em!important;
+  }
+}
 /* Dropdown */
 nav ul li:hover ul {
     display: block;
@@ -204,7 +231,10 @@ mark {
 ol li,
 ul li {
     padding: 0.2rem 0;
+    font-size: 1em;
 }
+
+
 
 p {
     margin: 0.75rem 0;
@@ -325,6 +355,7 @@ form {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     display: block;
+    width:100%;
     max-width: var(--width-card-wide);
     min-width: var(--width-card);
     padding: 1.5rem;
@@ -435,10 +466,13 @@ blockquote footer {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 a.totop {
   display:block;
   width:100%;
-  font-size:.75em;
   text-align:right;
 }
 
@@ -473,7 +507,20 @@ a.totop {
 }
 
 .categories ul li {
-    display: inline-block;
-    width: 10%;
-    margin: 1rem;
+}
+@media(min-width:768px){
+  .categories ul li {
+    display: block!important;
+    font-size: 2.5rem!important;
+    white-space: nowrap!important;
+    padding:.5em 1em;
+  }
+}
+@media(min-width:1200px){
+  .categories ul li {
+    display: inline-block!important;
+    font-size: 1rem!important;
+    white-space: nowrap!important;
+    padding:.5em 1em;
+  }
 }
